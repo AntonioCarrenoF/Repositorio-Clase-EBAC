@@ -640,6 +640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e67786654fdbf3478ba7e0fd70c5c70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabCubo: {fileID: 804531958}
 --- !u!114 &963194234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -652,6 +653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deaa5424311bc7d4e86f79b9a3b74fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabCubo: {fileID: 804531958}
 --- !u!114 &963194235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -664,6 +666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d41c33c282c6874f9f46d54e86c9583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabCubo: {fileID: 804531958}
 --- !u!1 &1493148551 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6065073879084491304, guid: 3c5531565080ae847a5e20e05c34ebb7, type: 3}
