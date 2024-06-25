@@ -495,6 +495,7 @@ GameObject:
   - component: {fileID: 963194235}
   - component: {fileID: 963194234}
   - component: {fileID: 963194233}
+  - component: {fileID: 963194236}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -648,7 +649,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: deaa5424311bc7d4e86f79b9a3b74fe2, type: 3}
   m_Name: 
@@ -661,12 +662,24 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d41c33c282c6874f9f46d54e86c9583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   prefabCubo: {fileID: 804531958}
+--- !u!114 &963194236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb6f9bc1a527846c2a61adc42cd23d99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1493148551 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6065073879084491304, guid: 3c5531565080ae847a5e20e05c34ebb7, type: 3}
@@ -971,6 +984,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 319660298204456202, guid: 3c5531565080ae847a5e20e05c34ebb7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 940909991143231992, guid: 3c5531565080ae847a5e20e05c34ebb7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1104893835804266477, guid: 3c5531565080ae847a5e20e05c34ebb7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1014,6 +1035,14 @@ PrefabInstance:
     - target: {fileID: 6065073879084491304, guid: 3c5531565080ae847a5e20e05c34ebb7, type: 3}
       propertyPath: m_Name
       value: Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 6065073879084491304, guid: 3c5531565080ae847a5e20e05c34ebb7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206887816720452125, guid: 3c5531565080ae847a5e20e05c34ebb7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
