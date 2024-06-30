@@ -70,17 +70,17 @@ public class EjerciciosVariablesMod8 : MonoBehaviour
         Debug.Log("el resultado de la operacion TryParse es "+g);
 
         string miOracion = "Hola Mundo, mi nombre es Antonio";
-        string caracteresPares = " ";
+        string caracteresPares ="";
         int longitud =miOracion.Length;
-        for(int i=0; i<longitud;)
+        for(int h=0; h<longitud; h++)
         {
-            if (i % 2 == 0)
+            if (h%2==0)
             {
 
             }
             else
             {
-                caracteresPares += miOracion[i];
+                caracteresPares += miOracion[h];
             }
             Debug.Log(caracteresPares);
         }
@@ -89,8 +89,6 @@ public class EjerciciosVariablesMod8 : MonoBehaviour
         string miFrase = "Oracion para EBAC";
         string miFraseCortada = miFrase.Substring(5, 12);
         Debug.Log(miFraseCortada);
-
-
 
 
     }
