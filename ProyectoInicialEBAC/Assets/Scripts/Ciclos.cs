@@ -26,7 +26,43 @@ public class Ciclos : MonoBehaviour
         for (int i = 0; i < diasSemana.Length; i++)
         {
             miArreglo[i] = i + 1;
-            Debug.Log(diasSemana[i]);
+            //Debug.Log(diasSemana[i]);
+        }
+
+        //int[,] miMatriz = new int[3, 3] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } }; //arreglo multidimensional
+        //for (int j=0; j<miMatriz.GetLength(0); j++)
+        //{
+        //    for (int k=0;k<miMatriz.GetLength(1); k++)
+        //    {
+        //        Debug.Log(miMatriz[j, k]);
+        //    }
+        //}
+
+
+        //int[][] miArregloJagged = new int[][] //arreglo jagged
+        //{
+        //    new int[]{1,2,3},
+        //    new int[]{4,5},
+        //    new int[]{6,7,8,9},
+        //};
+        //miArregloJagged[1] = new int[] {10, 11, 12, 13 };  //modificacion a arreglo anterior de 4,5
+        //Debug.Log(miArregloJagged[0][1]);
+        //for(int x=0; x<miArregloJagged.Length; x++)
+        //{
+        //    for (int y = 0; y < miArregloJagged[x].Length; y++)
+        //    {
+        //        Debug.Log(miArregloJagged[x][y]);
+        //    }
+        //}
+
+        foreach (int i in miArreglo)  //foreach se recomienda unicamente para lectura y consultar, ya que no permite modificar valores
+        {
+            Debug.Log(i);
+        }
+
+        foreach(string dias in diasSemana)
+        {
+            Debug.Log(dias);
         }
 
         //for (int i = 10; i > 1; i--) ;
@@ -34,18 +70,18 @@ public class Ciclos : MonoBehaviour
         //    Debug.Log(i);
         //}
 
-            //bool mibooleano= false;
-            //while (mibooleano)
-            //{
-            //    contador++;
-            //    Debug.Log("hola");
+        //bool mibooleano= false;
+        //while (mibooleano)
+        //{
+        //    contador++;
+        //    Debug.Log("hola");
 
-            //}
+        //}
 
-            //do
-            //{
-            //    Debug.Log("hola desde do while");
-            //} while (mibooleano);
+        //do
+        //{
+        //    Debug.Log("hola desde do while");
+        //} while (mibooleano);
 
     }
 
