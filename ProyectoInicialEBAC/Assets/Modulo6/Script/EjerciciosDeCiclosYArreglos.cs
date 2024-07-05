@@ -36,8 +36,29 @@ public class EjerciciosDeCiclosYArreglos : MonoBehaviour
             Debug.Log(enunciado);
         }
 
-        //pendiente realizar el ejercicio 3
 
+        int[,] arregloBidimensional = new int[2, 3] { {1,2,3 },{4,5,6 } };
+        int[] arregloUnidimensional = new int[3] {1,2,3};
+        int[] resultado = new int[2];
+        int a, suma;
+        for (int i = 0; i < 2; i++)
+        {
+            a = 0;
+            while (a < 1)
+            {
+                suma = 0;
+                for (int j = 0; j < 3; j++)
+                {
+                    suma += arregloBidimensional[i, j] * arregloUnidimensional[i];
+                    a++;
+                    resultado[i] = suma;
+                }
+            }
+        }
+        for (int i = 0; i < 2; i++)
+        {
+            Debug.Log(resultado[i]);
+        }
 
     }
 
