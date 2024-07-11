@@ -24,6 +24,12 @@ public class Clases : MonoBehaviour
         Debug.Log(campo1);
         VuelveCeroAlNumero(out campo1);
         Debug.Log(campo1);
+        ClaseNormal miClase = new ClaseNormal(campo3, campo4);
+        campo1 = miClase.SumarFlotantes(campo3, campo4);
+        Debug.Log(campo1);
+        campo1 = ClaseNormal.MultiplicarFlotantes(campo3, campo4);
+        Debug.Log(campo1);
+      
         
     }
 
