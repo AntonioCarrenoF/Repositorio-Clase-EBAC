@@ -15,7 +15,31 @@ public class EstructurasDeDatos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i=0; i < 20; i++)
+     for (int i=0; i < 20; i++)
+        {
+            hashSetInts.Add(i);
+        }
+        if (hashSetInts.Contains(5)) //se utiliza para realizar busquedas de un elemento
+        {
+            hashSetInts.Remove(5);
+        }
+        else
+        {
+            Debug.Log("El Hash set no contiene este elemento");
+        }
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+
+    public void DemoListas() //se encapsuló en una funcion creada por mi
+    {
+        for (int i = 0; i < 20; i++)
         {
             //listaNumeros.Add(i); //utiliza para lista normal del 0 al 19
             listaNumeros.Add(Random.Range(0, 20)); //se utiliza para una lista aleatoria del 0 al 20
@@ -48,11 +72,6 @@ public class EstructurasDeDatos : MonoBehaviour
             Debug.Log(nombre);
         }
 
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
