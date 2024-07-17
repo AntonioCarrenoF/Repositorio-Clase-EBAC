@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq; //se agregó para poder usar funiones de extension
 using UnityEngine;
 
 public class EstructurasDeDatos : MonoBehaviour
@@ -29,7 +30,8 @@ public class EstructurasDeDatos : MonoBehaviour
 
     public void DemoListas() //se encapsuló en una funcion creada por mi
     {
-        for (int i = 0; i < 20; i++)
+
+        for (int i = 0; i < 10; i++)
         {
             //listaNumeros.Add(i); //utiliza para lista normal del 0 al 19
             listaNumeros.Add(Random.Range(0, 20)); //se utiliza para una lista aleatoria del 0 al 20
@@ -38,29 +40,41 @@ public class EstructurasDeDatos : MonoBehaviour
         {
             Debug.Log(numero);
         }
-        listaNumeros.Sort(); //se utiliza para ordenar la lista de numeros en orden
+        //listaNumeros.Sort(); //se utiliza para ordenar la lista de numeros en orden
+        var listaOrdenada = listaNumeros.OrderBy(p => p).ToList();
+        var listaValoresGrandes = listaNumeros.Where(p => p > 10).ToList();
+        Debug.Log("lista base");
         foreach (var numero in listaNumeros)
         {
             Debug.Log(numero);
         }
-
-
-        listaString.Add("Diego");
-        listaString.Add("Sofia");
-        listaString.Add("Daniel");
-        listaString.Add("Javier");
-        listaString.Add("Diana");
-        foreach (var nombre in listaString)
+        Debug.Log("lista de numeros ordenada");
+        foreach(var numero in listaOrdenada)
         {
-            Debug.Log(nombre);
+            Debug.Log(numero);
         }
-        listaString.Remove("Javier"); //se utiliza para eliminar elementos de una lista
-        listaString.Remove("Daniel");
-        listaString.RemoveAt(2); //otro ejemplo para remover a Daniel
-        foreach (var nombre in listaString)
+        Debug.Log("lista de numeros grandes");
+        foreach(var numero in listaValoresGrandes)
         {
-            Debug.Log(nombre);
+            Debug.Log(numero);
         }
+
+        //listaString.Add("Diego");
+        //listaString.Add("Sofia");
+        //listaString.Add("Daniel");
+        //listaString.Add("Javier");
+        //listaString.Add("Diana");
+        //foreach (var nombre in listaString)
+        //{
+        //    Debug.Log(nombre);
+        //}
+        //listaString.Remove("Javier"); //se utiliza para eliminar elementos de una lista
+        //listaString.Remove("Daniel");
+        //listaString.RemoveAt(2); //otro ejemplo para remover a Daniel
+        //foreach (var nombre in listaString)
+        //{
+        //    Debug.Log(nombre);
+        //}
 
 
 
