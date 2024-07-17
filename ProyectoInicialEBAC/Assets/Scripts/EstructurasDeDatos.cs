@@ -15,8 +15,8 @@ public class EstructurasDeDatos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ///FIFO = First in first out (PEPS)
-        ///FILO = First in last out (UEPS)
+        DemoDictionary("escopeta"); //funcion para extraer del diccionario, se imprime el valor el arma
+        DemoDictionary("espada");
 
     }
 
@@ -85,6 +85,7 @@ public class EstructurasDeDatos : MonoBehaviour
 
     public void DemoColas()
     {
+        ///FIFO = First in first out (PEPS) se utiliza en colas
         colaStrings.Enqueue("proyectil 1");
         colaStrings.Enqueue("proyectil 2");
         colaStrings.Enqueue("proyectil 3");
@@ -99,5 +100,59 @@ public class EstructurasDeDatos : MonoBehaviour
         Debug.Log(colaStrings.Peek());
         colaStrings.Dequeue();
         Debug.Log(colaStrings.Peek());
+    }
+
+
+    public void DemoPilas()
+    {
+        ///FILO = First in last out (UEPS) se utiliza en pilas
+        pilaStrings.Push("as");
+        pilaStrings.Push("CincoEspadas");
+        pilaStrings.Push("TresCorazones");
+        pilaStrings.Push("CuatroTrebol");
+        pilaStrings.Push("ReyEspadas");
+        Debug.Log(pilaStrings.Peek()); //primero saldra el rey de espadas y despues cuatro treboles y así sucesivamente
+        pilaStrings.Pop();
+        Debug.Log(pilaStrings.Peek());
+        pilaStrings.Pop();
+        Debug.Log(pilaStrings.Peek());
+        pilaStrings.Pop();
+        Debug.Log(pilaStrings.Peek());
+        pilaStrings.Pop();
+        Debug.Log(pilaStrings.Peek());
+    }
+
+
+    public void DemoDictionary(string arma)
+    {
+        float temporal = 0;
+        if (!poderArmas.ContainsKey("rifle")) //se utiliza para corregir errores y el !para convertir en negativo
+        {
+            poderArmas.Add("rifle", 7.0f);
+        }
+        if (!poderArmas.ContainsKey("pistola"))
+        {
+            poderArmas.Add("pistola", 3.0f);
+        }
+        if (!poderArmas.ContainsKey("escopeta"))
+        {
+            poderArmas.Add("escopeta", 5.0f);
+        }
+        if (!poderArmas.ContainsKey("rifleFrancotirador"))
+        {
+            poderArmas.Add("rifleFrancotirador", 10.0f);
+        }
+        if (!poderArmas.ContainsKey("cuchillo"))
+        {
+            poderArmas.Add("cuchillo", 2.0f);
+        }
+        if (poderArmas.TryGetValue(arma, out temporal))
+        {
+            Debug.Log(temporal);
+        }
+        else
+        {
+            Debug.Log("esa arma no existe");
+        }
     }
 }
