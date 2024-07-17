@@ -15,18 +15,8 @@ public class EstructurasDeDatos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-     for (int i=0; i < 20; i++)
-        {
-            hashSetInts.Add(i);
-        }
-        if (hashSetInts.Contains(5)) //se utiliza para realizar busquedas de un elemento
-        {
-            hashSetInts.Remove(5);
-        }
-        else
-        {
-            Debug.Log("El Hash set no contiene este elemento");
-        }
+        ///FIFO = First in first out (PEPS)
+        ///FILO = First in last out (UEPS)
 
     }
 
@@ -73,5 +63,41 @@ public class EstructurasDeDatos : MonoBehaviour
         }
 
 
+
+    }
+
+    public void DemoHashSet()
+    {
+        for (int i = 0; i < 20; i++)
+        {
+            hashSetInts.Add(i);
+        }
+        if (hashSetInts.Contains(5)) //se utiliza para realizar busquedas de un elemento
+        {
+            hashSetInts.Remove(5);
+        }
+        else
+        {
+            Debug.Log("El Hash set no contiene este elemento");
+        }
+    }
+
+
+    public void DemoColas()
+    {
+        colaStrings.Enqueue("proyectil 1");
+        colaStrings.Enqueue("proyectil 2");
+        colaStrings.Enqueue("proyectil 3");
+        colaStrings.Enqueue("proyectil 4");
+        colaStrings.Enqueue("proyectil 5");
+        Debug.Log(colaStrings.Peek()); //se imprime el primer elemento de los datos
+        colaStrings.Dequeue(); //se elimina el proyectil 1
+        Debug.Log(colaStrings.Peek()); //se imprime el primer elemento de los datos proyectil 2
+        colaStrings.Dequeue(); //se elimina el proyectil 2 y asi sucesivamente
+        Debug.Log(colaStrings.Peek());
+        colaStrings.Dequeue();
+        Debug.Log(colaStrings.Peek());
+        colaStrings.Dequeue();
+        Debug.Log(colaStrings.Peek());
     }
 }
