@@ -6,7 +6,6 @@ using System.Linq;
 public class EjerciciosEstructuras : MonoBehaviour
 {
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +17,19 @@ public class EjerciciosEstructuras : MonoBehaviour
 
         var tercerEjercicio = nuevoHashSet(segundoEjercicio.ToList());
         Debug.Log(string.Join(" ", tercerEjercicio));
+
+        Stack<string> pila = new Stack<string>();
+        pila.Push("primero");
+        pila.Push("segundo");
+        pila.Push("tercero");
+        pila.Push("cuarto");
+        pila.Push("quinto");
+        Debug.Log(string.Join(" ", pila));
+        var cuartoEjercicio = nuevaCola(pila);
+        while (cuartoEjercicio.Count > 0)
+        {
+            Debug.Log(cuartoEjercicio.Dequeue());
+        }
 
 
 
@@ -66,5 +78,17 @@ public class EjerciciosEstructuras : MonoBehaviour
             nuevo.Add(hash);
         }
         return nuevo;
+    }
+
+
+    public Queue<string> nuevaCola(Stack<string> a)
+    {
+        Queue<string> nueva = new Queue<string>();
+        while (a.Count > 0)
+        {
+            nueva.Enqueue(a.Peek());
+            a.Pop();
+        }
+        return nueva;
     }
 }
