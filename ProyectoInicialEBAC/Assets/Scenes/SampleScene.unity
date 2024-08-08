@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 11282594}
   - component: {fileID: 11282593}
   - component: {fileID: 11282592}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Suelo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,7 +430,7 @@ GameObject:
   - component: {fileID: 805074714}
   - component: {fileID: 805074713}
   - component: {fileID: 805074712}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Suelo2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1010,6 +1010,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sphere
       objectReference: {fileID: 0}
+    - target: {fileID: 6633550922760506113, guid: 287c750ca935feb4e9d20b4a920ccf65, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1086,6 +1090,10 @@ PrefabInstance:
     - target: {fileID: 1815781430706620774, guid: 2ce0e8a500fe58445a14e4fd3a1bfd0d, type: 3}
       propertyPath: m_Name
       value: Capsule
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815781430706620774, guid: 2ce0e8a500fe58445a14e4fd3a1bfd0d, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8484404872111101525, guid: 2ce0e8a500fe58445a14e4fd3a1bfd0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1317,6 +1325,10 @@ PrefabInstance:
     - target: {fileID: 6065073879084491304, guid: 3c5531565080ae847a5e20e05c34ebb7, type: 3}
       propertyPath: m_Name
       value: Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 6065073879084491304, guid: 3c5531565080ae847a5e20e05c34ebb7, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6065073879084491304, guid: 3c5531565080ae847a5e20e05c34ebb7, type: 3}
       propertyPath: m_IsActive

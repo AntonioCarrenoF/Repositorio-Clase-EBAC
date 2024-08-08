@@ -14,6 +14,7 @@ public class VariablesNumericas : MonoBehaviour
     //Float => [0 0 0 0 0 0 0 0] [0 0 0 0 0 0 0 0] [0 0 0 0 0 0 0 0] [0 0 0 0 0 0 0 0]
     //double => [0 0 0 0 0 0 0 0] [0 0 0 0 0 0 0 0] [0 0 0 0 0 0 0 0] [0 0 0 0 0 0 0 0] [0 0 0 0 0 0 0 0] [0 0 0 0 0 0 0 0] [0 0 0 0 0 0 0 0] [0 0 0 0 0 0 0 0]
 
+    LayerMask myLayerMask=1>>9;//quiere decir que se mueve 9 posiciones a la derecha en los int, en nuestro ejemplo es la layer de geometrias
     sbyte miByteConSigno = 0;
     byte miByte = 0;
     short miShort = 1;

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7653212989688327438}
   - component: {fileID: 2707505240499754118}
   - component: {fileID: 1218402091762340465}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: "C\xE1psula"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
